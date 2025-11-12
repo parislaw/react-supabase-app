@@ -15,6 +15,7 @@ export const DataExample = () => {
     if (user) {
       fetchTodos();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   // READ: Fetch all todos for current user

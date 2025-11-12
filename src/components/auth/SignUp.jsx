@@ -17,7 +17,7 @@ export const SignUp = () => {
     setMessage('');
     setLoading(true);
 
-    const { data, error } = await signUp(email, password);
+    const { error } = await signUp(email, password);
 
     if (error) {
       setError(error.message);
